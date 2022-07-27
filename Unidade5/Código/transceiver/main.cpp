@@ -18,51 +18,39 @@
 #include <string.h>
 #include "delay.h"
 
+#define TRANSMISSOR 1
+#define RECEPTOR 0
 
-
-
-
-#define modo_receptor 1
+int modo=RECEPTOR;
 
 int main(void)
 {
 	SystemInit();
 
 	uint8_t buffer[10];
+	uint8_t bufferRecepcao[10];
 	
 	UART0_Init(9600);
 	printf("Testando\n");
 
 	radio.configura();
+	printf("Retorno = %d\n ",radio.testa());
 
-	// modo receptor	
-	
-	if (modo_receptor)
+	if (modo==TRANSMISSOR)
 	{
-		radio.modoRX();
-		int qtd;
-		while (1)
-		{
-			if (radio.temMensagem(BLOQ) )
-			{
-				qtd=radio.leMensagem(buffer);
-				buffer[8] = 0;
-				printf("buffer=%s\n",buffer);
-			}
-		}
-		
+		sprintf((char *)buffer,"UFSC   ");
+		radio.enviaMensagem(buffer,8);
 	}
 	else
 	{
-		while (1)
-		{
-			strcpy((char *) buffer,"oi mundo");
-			radio.enviaMensagem(buffer, 8);
-			delay_ms(2000);
-		}
-	}
-	
+		uint8_t tamanho = radio.leMensagem(bufferRecepcao);
 
+		bufferRecepcao[tamanho]=0;
+		printf("Recebido= %s\n",(char *)bufferRecepcao
+		);
+
+	}
+	while(1);
 
 	return 0;
 }

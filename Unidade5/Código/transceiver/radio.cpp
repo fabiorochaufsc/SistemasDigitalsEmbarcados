@@ -2,6 +2,8 @@
 #include "digital.h"
 #include "spi.h"
 #include "delay.h"
+#include "uart.h"
+#include <stdio.h>
 
 void RADIO::configura (void)
 {
@@ -43,12 +45,18 @@ void RADIO::configura (void)
 	delay_ms(10);
 	
 }
+
+uint8_t RADIO::testa(void)
+{
+	uint8_t lido;
+	leRegistrador (STATUS, &lido, 1);
+	return lido;
+}
 void RADIO::modoRX(void)
 {
 	uint8_t buffer[10];
 	buffer[0]=0x72;
 	escreveRegistrador (CONFIG, buffer, 1 );
-
 }
 
 void RADIO::modoTX(void)
@@ -81,11 +89,13 @@ void RADIO::enviaMensagem(uint8_t buffer[], int tam)
 int RADIO::temMensagem(int modo)
 {
 	uint8_t lido[5];
+	printf("testa se tem msg\n");
 	while (1)
 	{
 		leRegistrador (STATUS, lido, 1);
 		if ((lido[0]>>6) & 1)
 		{
+			printf("Recebeu msg\n");
 			return 1;
 		}
 		if (modo == N_BLOQ) return 0;
@@ -94,6 +104,24 @@ int RADIO::temMensagem(int modo)
 }
 int RADIO::leMensagem(uint8_t buffer[])
 {
+	
+	modoRX();
+	printf("Testa se tem msg\n");
+	while (1)
+	{
+		uint8_t lido;
+		leRegistrador (STATUS, &lido, 1);
+		printf("lido=%04x\n",lido);
+		if ((lido>>6) & 1)
+		{
+			printf("Achou mensagem\n");
+			delay_ms(1000);
+			break;
+		}
+		delay_ms(1000);
+	}
+
+	printf("Le a mensagem recebida\n");
 	spi.start();
 		spi.write(0x61);
 		for (int x=0;x<TAM_MSG;x++) buffer[x] = spi.write(0);
