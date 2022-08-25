@@ -35,14 +35,12 @@
 
 ---
 
-![Software]
 
 ## Software
 ### Softwares utilizados na disciplina
   
 
 ---
-![configuracao]
 ## Configurações
 
 Para a programação será utilizado o adaptador USB-SERIAL. Quando ele dispositivo é conectado ele será reconhecido como um dispositivo USB e o seu driver carregado pelo Linux.
@@ -55,7 +53,6 @@ Para descobrir o nome do dispositivo, use **dmesg** para ver as últimas mensage
 Verifique se a máquina HOST liberou o dispositivo para a máquina emulada. Além disso, no virtualbox existe a necessidade de instalação de um pacote (extension pack) para usar os dispositivos USB.
 
 ---
-![Referencias]
 ## Bibliografia
 
 
