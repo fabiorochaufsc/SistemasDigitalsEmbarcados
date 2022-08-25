@@ -76,7 +76,7 @@ Verifique se a máquina HOST liberou o dispositivo para a máquina emulada. Alé
 ---
 
 ## Links
-
+[FreeRTOS](https://www.freertos.org/a00106.html)<br/>
 [What Happened on Mars?](http://www.cs.cmu.edu/afs/cs/user/raj/www/mars.html) <br/>
 [Aplicações interessantes de sistemas embarcados - Automação residencial](https://www.youtube.com/watch?v=-itZq0x9E94)<br/>
 [Bootloader](https://tribotecnologica.wordpress.com/tag/bootloader/)
