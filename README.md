@@ -1,5 +1,4 @@
 
-<img align="center" src="https://github.com/fabiorochaufsc/fabiorochaufsc.github.io/blob/master/web/embedded-software.jpg" alt="Logo">
 
 -------
 <p align="center">
@@ -36,14 +35,14 @@
 
 ---
 
-![Software](https://github.com/fabiorochaufsc/fabiorochaufsc.github.io/blob/master/web/software2.png)
+![Software]
 
 ## Software
 ### Softwares utilizados na disciplina
   
 
 ---
-![configuracao](https://github.com/fabiorochaufsc/fabiorochaufsc.github.io/blob/master/web/config-sys.jpg)
+![configuracao]
 ## Configurações
 
 Para a programação será utilizado o adaptador USB-SERIAL. Quando ele dispositivo é conectado ele será reconhecido como um dispositivo USB e o seu driver carregado pelo Linux.
@@ -56,7 +55,7 @@ Para descobrir o nome do dispositivo, use **dmesg** para ver as últimas mensage
 Verifique se a máquina HOST liberou o dispositivo para a máquina emulada. Além disso, no virtualbox existe a necessidade de instalação de um pacote (extension pack) para usar os dispositivos USB.
 
 ---
-![Referencias](https://github.com/fabiorochaufsc/fabiorochaufsc.github.io/blob/master/web/livros.png)
+![Referencias]
 ## Bibliografia
 
 
