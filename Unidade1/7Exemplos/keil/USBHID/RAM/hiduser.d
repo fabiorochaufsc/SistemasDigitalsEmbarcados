@@ -1,9 +1,0 @@
-.\RAM\hiduser.o: hiduser.c
-.\RAM\hiduser.o: ..\common\inc\type.h
-.\RAM\hiduser.o: C:\Keil\ARM\RV31\INC\stdint.h
-.\RAM\hiduser.o: usb.h
-.\RAM\hiduser.o: hid.h
-.\RAM\hiduser.o: usbcfg.h
-.\RAM\hiduser.o: usbcore.h
-.\RAM\hiduser.o: hiduser.h
-.\RAM\hiduser.o: demo.h

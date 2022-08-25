@@ -1,4 +1,0 @@
---cpu Cortex-M3 ".\flash\startup_lpc17xx.o" ".\flash\system_lpc17xx.o" ".\flash\usbhw.o" ".\flash\usbuser.o" ".\flash\demo.o" ".\flash\hiduser.o" ".\flash\usbcore.o" ".\flash\usbdesc.o" --nodebug --strict --scatter ".\FLASH\USBHID.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\FLASH\USBHID.map" -o ".\FLASH\USBHID.axf"

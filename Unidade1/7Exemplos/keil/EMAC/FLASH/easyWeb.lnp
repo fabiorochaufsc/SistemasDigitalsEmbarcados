@@ -1,4 +1,0 @@
---cpu Cortex-M3 ".\flash\startup_lpc17xx.o" ".\flash\system_lpc17xx.o" ".\flash\easyweb.o" ".\flash\emac.o" ".\flash\tcpip.o" --strict --scatter ".\FLASH\easyWeb.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\FLASH\easyWeb.map" -o ".\FLASH\easyWeb.axf"

@@ -1,9 +1,0 @@
-#Thu Jul 15 02:21:05 CEST 2010
-Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort=COM2
-Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits=1
-Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits=8
-eclipse.preferences.version=1
-Connectors.ConnectionType=org.eclipse.tm.internal.terminal.serial.SerialConnector
-Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate=115200
-Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity=None
-Connectors.org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl=None

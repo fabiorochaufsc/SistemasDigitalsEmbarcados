@@ -1,4 +1,0 @@
---cpu Cortex-M3 ".\flash\startup_lpc17xx.o" ".\flash\system_lpc17xx.o" ".\flash\adc.o" ".\flash\adctest.o" --strict --scatter ".\FLASH\adc.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\FLASH\adc.map" -o ".\FLASH\adc.axf"

@@ -33,19 +33,6 @@
 ### Baixar as novas atualizações do repositorio para o seu PC
 >  git pull
 
----
-![video](https://github.com/fabiorochaufsc/fabiorochaufsc.github.io/blob/master/web/videoaula.jpg)
-## Vídeos
-
-
-
-| Material                                                                                                   |
-|------------------------------------------------------------------------------------------------------------|
-|[Introdução as diferentes versões do núcleo ARM](https://www.youtube.com/watch?v=7LqPJGnBPMM)               |
-|[ARM - Arquitetura, registradores, endereços](https://www.youtube.com/watch?v=15z_vn4H41U)                  |
-|[ARM - Instruções **MOVE**](https://www.youtube.com/watch?v=0_r-3eWB54c)                                    |
-|[ARM - Instruções **LOAD/STORE**](https://www.youtube.com/watch?v=07ATOG5wXPE)                              |
-|[ARM - Manipulação de **Bits**](https://www.youtube.com/watch?v=UQwtywaKcic)                                |
 
 ---
 
@@ -54,28 +41,6 @@
 ## Software
 ### Softwares utilizados na disciplina
   
-gcc   - Compilador C para produzir código para o ARM
-Software para gravação na FLASH do ARM (a gravação poderá ser feita por duas formas, usando o bootloader que já vem gravado nos kits de desenvolvimento (fazerndo uso da porta RS232 ou usando o JTAG pela porta USB)
-
-Para instalar no Linux o as ferramentas de desenvolvimento use:
-
-Para as distribuições linux baseadas no Debian
-
-> sudo apt-get install gcc-arm-none-eabi<br/>
-> sudo apt-get install openocd<br/>
-> sudo apt-get install lpc21isp
->
-> PS: aparentemente na versão embutida na distribuição do ubuntu/lubuntu 18.04
-> o gcc-arm-none-eabi tem problemas (em usar a biblioteca do C)
->
-> Assim, para quem tiver com problemas, instale na mão 
-> Baixe a última versão e descompacte num diretório, configure o PATH
-> https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
->
-
- exemplo de uso:
-         **lpc21isp  -control   -bin blink.bin  /dev/ttyUSB0 115200 12000**
-
 
 ---
 ![configuracao](https://github.com/fabiorochaufsc/fabiorochaufsc.github.io/blob/master/web/config-sys.jpg)
@@ -118,9 +83,4 @@ Verifique se a máquina HOST liberou o dispositivo para a máquina emulada. Alé
 
 [What Happened on Mars?](http://www.cs.cmu.edu/afs/cs/user/raj/www/mars.html) <br/>
 [Aplicações interessantes de sistemas embarcados - Automação residencial](https://www.youtube.com/watch?v=-itZq0x9E94)<br/>
-[O que é JTAG ?](http://www.corelis.com/education/JTAG_Tutorial.htm#WhatIs) <br/>
-[O que é p formato HEX ?](http://en.wikipedia.org/wiki/Intel_HEX)<br/>
-[O que é o formato ELF ?](http://pt.wikipedia.org/wiki/ELF)<br/>
-[Calculo do checksum   ?](http://sigalrm.blogspot.com.br/2011/10/cortex-m3-exception-vector-checksum.html)<br/>
-[Mbed](http://sergioprado.org/mbed-desenvolvendo-em-cortex-m3-com-o-gcc/)<br/>
 [Bootloader](https://tribotecnologica.wordpress.com/tag/bootloader/)

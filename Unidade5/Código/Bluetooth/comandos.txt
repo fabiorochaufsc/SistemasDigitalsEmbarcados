@@ -1,8 +1,0 @@
-at+init
-at+iac=9e8b33
-at+class=0
-at+inqm=1,9,48
-at+inq  -- descobre os mac address
-at+pair=2014,4,302728,20   --pareia com um device
-
-at+link=2014,4,302728 -- conecta

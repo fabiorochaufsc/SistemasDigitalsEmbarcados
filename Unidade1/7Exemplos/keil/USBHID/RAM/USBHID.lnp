@@ -1,4 +1,0 @@
---cpu Cortex-M3 ".\ram\startup_lpc17xx.o" ".\ram\system_lpc17xx.o" ".\ram\usbhw.o" ".\ram\usbuser.o" ".\ram\demo.o" ".\ram\hiduser.o" ".\ram\usbcore.o" ".\ram\usbdesc.o" --strict --scatter ".\RAM\USBHID.sct" 
---autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
---info sizes --info totals --info unused --info veneers 
- --list ".\RAM\USBHID.map" -o ".\RAM\USBHID.axf"

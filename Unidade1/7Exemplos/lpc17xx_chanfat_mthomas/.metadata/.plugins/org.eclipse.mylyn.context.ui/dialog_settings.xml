@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<section name="org.eclipse.mylyn.context.ui.navigator.context.quick">
-		<item value="false" key="org.eclipse.mylyn.internal.context.ui.views.QuickContextPopupDialogDIALOG_USE_PERSISTED_SIZE"/>
-		<item value="false" key="org.eclipse.mylyn.internal.context.ui.views.QuickContextPopupDialogDIALOG_USE_PERSISTED_LOCATION"/>
-	</section>
-</section>

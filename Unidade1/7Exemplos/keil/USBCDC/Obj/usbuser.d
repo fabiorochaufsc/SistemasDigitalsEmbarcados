@@ -1,9 +1,0 @@
-.\Obj\usbuser.o: usbuser.c
-.\Obj\usbuser.o: ..\Common\inc\type.h
-.\Obj\usbuser.o: C:\Keil\ARM\RV31\INC\stdint.h
-.\Obj\usbuser.o: usb.h
-.\Obj\usbuser.o: usbcfg.h
-.\Obj\usbuser.o: usbhw.h
-.\Obj\usbuser.o: usbcore.h
-.\Obj\usbuser.o: usbuser.h
-.\Obj\usbuser.o: cdcuser.h
