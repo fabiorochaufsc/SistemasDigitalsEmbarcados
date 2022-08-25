@@ -74,7 +74,7 @@ Verifique se a máquina HOST liberou o dispositivo para a máquina emulada. Alé
 |Mr Shibu K V, Introduction to Embedded Systems, TATA McGraw Hill, ISBN-10: 0070678790, 2009.                                                      |
 
 ---
-![Links](https://github.com/fabiorochaufsc/fabiorochaufsc.github.io/blob/master/web/referencias.png)
+
 ## Links
 
 [What Happened on Mars?](http://www.cs.cmu.edu/afs/cs/user/raj/www/mars.html) <br/>
