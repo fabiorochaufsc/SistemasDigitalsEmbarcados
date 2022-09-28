@@ -7,6 +7,8 @@
 #include "driver/uart.h"
 #include "driver/gpio.h"
 
+#include "digital.h"
+
 
 void app_main()
 {
@@ -21,7 +23,7 @@ void app_main()
     uart_param_config(UART_NUM_0, &uart_config);  
 
     printf("Demonstracao do ESP\n");
-   
+   pinMode();
    
     printf("FIM\n");
 }
