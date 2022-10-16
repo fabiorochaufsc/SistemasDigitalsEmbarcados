@@ -18,7 +18,7 @@ void app_main()
     while(1)
     {
 
-        vTaskDelay(10000 / portTICK_PERIOD_MS);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
         v = !v;
         gpio_set_level(BUZINA, v);
 

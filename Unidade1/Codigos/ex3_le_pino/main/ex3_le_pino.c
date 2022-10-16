@@ -12,7 +12,7 @@ void app_main()
 {
     
     uart_config_t uart_config = {
-        .baud_rate = 115200,                      //Bluetooth baud rate 
+        .baud_rate = 921600,                      //Bluetooth baud rate 
         .data_bits = UART_DATA_8_BITS,          //8 data bits 
         .parity    = UART_PARITY_DISABLE,       //No parity 
         .stop_bits = UART_STOP_BITS_1,          //1 stop bit 
