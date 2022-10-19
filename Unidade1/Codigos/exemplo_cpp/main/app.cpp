@@ -29,7 +29,7 @@ void app_main()
   // endereco do dispositivo eh 1010000 ou seja 0x50
   // escreve o valor 100 no endereco 0
   i2c_start();
-    i2c_escreve_byte (0x50 << 1 | 0);
+    i2c_escreve_byte ( (0x50 << 1) | 0);
     i2c_escreve_byte (0);
     i2c_escreve_byte (0);
     i2c_escreve_byte (100);
