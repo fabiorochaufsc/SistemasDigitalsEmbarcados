@@ -21,13 +21,17 @@ void app_main()
 
   serial.begin(9600);
   printf("Funcionando....\n");
-  digital.pinMode(PIN16,OUTPUT);
 
-    while (1) {
-        digital.digitalWrite(PIN16,v);
-        v = !v;
-        
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-    }
-    
+  // pinos de dados eh o 16 e pino de clock eh o 5
+  i2c_configura (PIN16,PIN5)   ;
+
+  // faz uma operacao de escrita na eeprom
+  // endereco do dispositivo eh 1010000 ou seja 0x50
+  // escreve o valor 100 no endereco 0
+  i2c_start();
+    i2c_escreve_byte (0x50 << 1 | 0);
+    i2c_escreve_byte (0);
+    i2c_escreve_byte (0);
+    i2c_escreve_byte (100);
+  i2c_stop();
 }
