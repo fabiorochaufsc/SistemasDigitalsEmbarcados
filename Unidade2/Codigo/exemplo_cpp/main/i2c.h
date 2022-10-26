@@ -1,12 +1,16 @@
 #ifndef __I2C_SOFTWARE_
 #define __I2C_SOFTWARE_
-
+#include "driver/gpio.h"
 #include <inttypes.h> 
 
 
-void     i2c_configura        (uint8_t pino_dados, uint8_t pino_clk);
+void     i2c_configura        (gpio_num_t pino_dados, gpio_num_t pino_clk);
 void     i2c_start(void);
 void     i2c_stop(void);
+
+
+uint8_t i2c_write (uint8_t valor_byte);
+uint8_t i2c_read (void);
 
 
 // Le e escreve apenas 1 byte

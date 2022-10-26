@@ -14,8 +14,9 @@
 gpio_num_t PIN_DADOS;
 gpio_num_t PIN_CLK;
 
-#define delay_us(A) ets_delay_us(A)
-#define delay_ms(A) ets_delay_us(A*1000)
+#define delay_us(A) ets_delay_us(2*A)
+#define delay_ms(A) vTaskDelay(500/portTICK_PERIOD_MS)
+
 
 
 void i2c_dados_baixo (void)
