@@ -10,6 +10,7 @@
 
 void app_main()
 {
+   ets_delay_us(2);
     uart_config_t uart_config = {
         .baud_rate = 115200,                      //Bluetooth baud rate 
         .data_bits = UART_DATA_8_BITS,          //8 data bits 

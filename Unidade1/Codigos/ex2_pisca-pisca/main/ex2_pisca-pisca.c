@@ -6,6 +6,18 @@
 
 #define BUZINA     GPIO_NUM_16
 
+volatile uint32 x;
+
+void meu_delay (void)
+{
+    volatile uint32_t a;
+     
+    for (a=0; a< 100000;a++)
+    {
+        x = x + a;
+    }
+}
+
 void app_main()
 {
     

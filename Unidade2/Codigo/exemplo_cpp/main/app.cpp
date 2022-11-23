@@ -22,6 +22,17 @@
 extern "C" void app_main() ;
 int v=0;
 
+int leiaTecla (void)
+{
+  unsigned char  x=0xff;
+  
+  while (x==0xff)
+  {
+        x = getchar();
+        printf("X\n");
+  }
+  return x;
+}
 void app_main()
 {
   char buffer[100];
@@ -29,6 +40,15 @@ void app_main()
 
   serial.begin(9600);
   printf("Funcionando....\n");
+  char linha[20];
+
+
+int x;
+ 
+    x = leiaTecla();  
+    printf("Leu %c\n",x);
+  
+
 
   // pinos de dados eh o 16 e pino de clock eh o 5
   strcpy(buffer,"Engenharia de Computacao");
