@@ -49,8 +49,7 @@ void app_main()
 
 			if (cont==10)
 			{
-				        	vTaskDelay(500 / portTICK_PERIOD_MS);
-
+				
 					valor = somador/10;
 					somador=0;
 					cont=0;
