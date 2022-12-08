@@ -52,12 +52,12 @@ uint32_t valor1, valor2,diferenca;
    {
    	zera();
    	valor1 = asm_ccount();
-	delay_us(58);  
+	delay_us(580);  
    	valor2 = asm_ccount();
    	diferenca =(valor2-valor1);
    	printf("t1 = %d  t2 = %d Diferenca vale %d\n",valor1, valor2, diferenca/80);
    	
-   	vTaskDelay(1/portTICK_PERIOD_MS);
+   	vTaskDelay(100/portTICK_PERIOD_MS);
    	
 
    }

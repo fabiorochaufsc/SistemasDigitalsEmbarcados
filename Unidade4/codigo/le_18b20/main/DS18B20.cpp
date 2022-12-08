@@ -4,6 +4,13 @@
 #include "DS18B20.h"
 #include "delay.h"
 
+
+uint64_t DS18B20::pegaEnd(void)
+{
+	
+}
+
+
 void DS18B20::init (void)
 {
 	uint8_t serial[6],crc;
